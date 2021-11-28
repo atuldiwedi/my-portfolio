@@ -1,6 +1,6 @@
 {
-  "homepage": "http://atuldiwedi.github.io/my-portfolio",
   "name": "portfolio",
+  "homepage": "https://atuldiwedi.github.io/my-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
