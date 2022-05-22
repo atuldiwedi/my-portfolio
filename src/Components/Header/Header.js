@@ -13,11 +13,10 @@ const Header = () => {
       <HeaderContainer>
         <NameContainer>{"<Atul Diwedi/>"}</NameContainer>
         <Options>
-          <Option>About</Option>
-          <Option>Skill</Option>
-          <Option>Work</Option>
-          <Option>Project</Option>
-          <Option>Contact</Option>
+          <Option to="about">About</Option>
+          <Option to="skill">Skill</Option>
+          <Option to="project">Project</Option>
+          <Option to="contact-me">Contact</Option>
           {/*<Button>Say Hello</Button>*/}
         </Options>
       </HeaderContainer>
