@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../../Assets/name2.svg";
 import {
   Button,
   HeaderContainer,
@@ -11,7 +12,11 @@ const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <NameContainer>{"<Atul Diwedi/>"}</NameContainer>
+        <NameContainer>
+          <img src={logo} alt="logo" />
+
+          {"Atul"}
+        </NameContainer>
         <Options>
           <Option to="about">About</Option>
           <Option to="skill">Skill</Option>
