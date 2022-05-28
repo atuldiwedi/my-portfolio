@@ -1,6 +1,6 @@
 import React from "react";
 import { Section, H1Header, HtmlText, Ptag } from "../../Global/Js/GlobalComp";
-import { ContactMe } from "./Home.element";
+import { ContactMe, NameContainer } from "./Home.element";
 const Home = () => {
   return (
     <>
@@ -8,10 +8,10 @@ const Home = () => {
         <HtmlText>{"<html>"}</HtmlText>
         <HtmlText tab="1">{"<body>"}</HtmlText>
         <HtmlText tab="2">{"<h1>"}</HtmlText>
-        <H1Header tab="3">
+        <H1Header tab="3" animate={{ scale: 0.5 }}>
           Hi,
           <br />
-          I'm Atul,
+          I'm <NameContainer>Atul</NameContainer>,
           <br />
           Web developer and Programmer
         </H1Header>
