@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion/dist/framer-motion";
 import styled from "styled-components";
 
 export const GlobalColor = {
@@ -69,4 +69,7 @@ export const Ptag = styled.p`
   font-size: 1rem;
   line-height: 1.5rem;
   margin: ${({ tab }) => `1rem 0 1rem ${tab}rem`};
+  letter-spacing: ${({ letterSpacing }) => `${letterSpacing}px`};
 `;
+
+export const TextMotion = styled(motion.span)``;

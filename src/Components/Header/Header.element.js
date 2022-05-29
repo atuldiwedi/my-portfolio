@@ -16,12 +16,15 @@ export const HeaderContainer = styled.nav`
   overflow-x: hidden;
 `;
 
-export const NameContainer = styled.div`
+export const NameContainer = styled(Link)`
   display: flex;
+  text-decoration: none;
   flex-direction: column;
   padding: 0.5rem;
   background-color: #000;
   align-items: center;
+  border-bottom: 1px solid ${GlobalColor.color["text-primary"]};
+  color: ${GlobalColor.color["text-primary"]};
 `;
 
 export const Logo = styled.div`
@@ -34,11 +37,14 @@ export const Options = styled.div`
 `;
 
 export const Option = styled(Link)`
-  border: 1px solid #8d8d8d;
-  padding: 1rem;
+  /* border-top: 1px solid ${GlobalColor.color["text-primary"]}; */
+  border-bottom: 1px solid ${GlobalColor.color["text-primary"]};
+  /* border: 1px solid #8d8d8d; */
+  padding: 1.5rem 1rem;
   text-decoration: none;
   color: ${GlobalColor.color["text-secondary"]};
   text-align: center;
+  font-weight: 500;
 
   &:hover {
     background-color: rgb(0, 212, 255);
@@ -54,7 +60,17 @@ export const Option = styled(Link)`
     -moz-text-fill-color: transparent;
   }
 `;
-
+export const SocialIcons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+`;
+export const SocialIcon = styled(Link)`
+  text-decoration: none;
+  color: ${GlobalColor.color["text-primary"]};
+`;
 // export const Button = styled.span`
 //   border: 2px solid blue;
 //   font-size: 1rem;

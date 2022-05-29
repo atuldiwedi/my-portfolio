@@ -1,20 +1,23 @@
 import React from "react";
 import logo from "../../Assets/name2 woa.svg";
+import { ImLinkedin2, ImGithub } from "react-icons/im";
 import {
   Button,
   HeaderContainer,
   NameContainer,
   Option,
   Options,
+  SocialIcon,
+  SocialIcons,
 } from "./Header.element";
 
 const Header = () => {
   return (
     <>
       <HeaderContainer>
-        <NameContainer>
+        <NameContainer to="my-portfolio">
           <img src={logo} alt="logo" />
-          <div>Atul</div>
+          <div>Atul Diwedi</div>
         </NameContainer>
         <Options>
           <Option to="about">About</Option>
@@ -22,6 +25,14 @@ const Header = () => {
           <Option to="project">Project</Option>
           <Option to="contact-me">Contact</Option>
           {/*<Button>Say Hello</Button>*/}
+          <SocialIcons>
+            <SocialIcon to="/">
+              <ImLinkedin2 />
+            </SocialIcon>
+            <SocialIcon to="/">
+              <ImGithub />
+            </SocialIcon>
+          </SocialIcons>
         </Options>
       </HeaderContainer>
     </>
