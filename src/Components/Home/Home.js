@@ -6,6 +6,7 @@ import {
   HtmlText,
   Ptag,
   TextMotion,
+  PrimaryButton,
 } from "../../Global/Js/GlobalComp";
 import Typewriter from "typewriter-effect";
 
@@ -49,7 +50,7 @@ const Home = () => {
           Front End Developer / Backend Developer
         </Ptag>
         <HtmlText tab="2">{"</p>"}</HtmlText>
-        <ContactMe tab="2">Contact me</ContactMe>
+        <PrimaryButton tab="2">Contact me</PrimaryButton>
         <HtmlText tab="1">{"</body>"}</HtmlText>
         <HtmlText>{"</html>"}</HtmlText>
       </Section>

@@ -36,6 +36,7 @@ export const MainContainer = styled.div`
 
 export const MainContent = styled.div`
   margin-left: 15%;
+  width: 100%;
 `;
 
 export default App;

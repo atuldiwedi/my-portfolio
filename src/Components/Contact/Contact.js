@@ -8,17 +8,17 @@ import {
   ParaBr,
   SplitContainer,
   SplitSideContainer,
+  PrimaryButton,
 } from "../../Global/Js/GlobalComp";
-import { Form, Input, Message } from "./Contant.element";
+import { Container, Form, Input, Message } from "./Contant.element";
 const Contact = () => {
   return (
     <>
       <Section>
-        <HtmlText>{"<html>"}</HtmlText>
-        <HtmlText tab="1">{"<body>"}</HtmlText>
-
         <SplitContainer>
           <SplitSideContainer>
+            <HtmlText>{"<html>"}</HtmlText>
+            <HtmlText tab="1">{"<body>"}</HtmlText>
             <HtmlText tab="2">{"<h1>"}</HtmlText>
             <H1Header tab="3">
               Want to <br /> contact me?
@@ -34,22 +34,32 @@ const Contact = () => {
             <HtmlText tab="2">{"<form>"}</HtmlText>
             <Ptag tab="3">
               <Form>
-                <Input type="text" placeholder="Name" />
-                <Input type="text" placeholder="Email" />
+                <SplitContainer>
+                  <SplitSideContainer>
+                    <Input type="text" placeholder="Name" />
+                  </SplitSideContainer>
+                  <SplitSideContainer>
+                    <Input type="text" placeholder="Email" />
+                  </SplitSideContainer>
+                </SplitContainer>
+
                 <Input type="text" placeholder="Subject" />
                 <Message
                   type="text"
                   placeholder="Message"
                   contenteditable="true"
                 />
+                <Container>
+                  <PrimaryButton>Send Message</PrimaryButton>
+                </Container>
               </Form>
             </Ptag>
             <HtmlText tab="2">{"</form>"}</HtmlText>
+            <HtmlText tab="1">{"</body>"}</HtmlText>
+            <HtmlText>{"</html>"}</HtmlText>
           </SplitSideContainer>
-          <SplitSideContainer>dbkbkbk</SplitSideContainer>
+          <SplitSideContainer></SplitSideContainer>
         </SplitContainer>
-        <HtmlText tab="1">{"</body>"}</HtmlText>
-        <HtmlText>{"</html>"}</HtmlText>
       </Section>
     </>
   );
